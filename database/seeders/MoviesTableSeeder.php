@@ -18,7 +18,7 @@ class MoviesTableSeeder extends Seeder
         for($i = 0; $i < 10; $i++){
             Movie::create([
                 'title' => $faker->sentence(),
-                'synopsis' => $faker->sentence(),
+                'synopsis' => $faker->paragraph(),
                 'year' => $faker->randomDigit(),
                 'cover' => $faker->sentence(),
             ]);
